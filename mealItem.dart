@@ -23,27 +23,15 @@ class MealItem extends StatelessWidget {
   void SelectMeal() {}
 
   String get complexityTest {
-    if (complexity == Complexity.Simple) {
-      return "Simple";
-    }
-    if (complexity == Complexity.Challenging) {
-      return "Challenging";
-    }
-    if (complexity == Complexity.Hard) {
-      return "Hard";
-    }
+    if (complexity == Complexity.Simple) return "Simple";
+    if (complexity == Complexity.Challenging) return "Challenging";
+    if (complexity == Complexity.Hard) return "Hard";
   }
 
   String get affordabilityTest {
-    if (affordability == Affordability.Pricey) {
-      return "Pricey";
-    }
-    if (affordability == Affordability.Luxurious) {
-      return "Expensive";
-    }
-    if (affordability == Affordability.Affordable) {
-      return "Affordable";
-    }
+    if (affordability == Affordability.Pricey) return "Pricey";
+    if (affordability == Affordability.Luxurious) return "Expensive";
+    if (affordability == Affordability.Affordable) return "Affordable";
   }
 
   @override
